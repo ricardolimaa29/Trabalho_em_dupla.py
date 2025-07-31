@@ -1,6 +1,6 @@
 
 # 📝 Explicação do Código: Cadastro com Arquivo JSON
-
+### Trabalho deve ser realizado em duplas !!!
 Este código cria um **sistema de cadastro de pessoas** utilizando **JSON** como formato para armazenar os dados. Os dados são gravados em um arquivo chamado `dados.json`.
 
 ---
@@ -141,22 +141,23 @@ def deletar():
 
 ```python
 def menu():
-    while True:
+    opcao = 0 # jeito gambiarra kk
+    while opcao !=5:
         print("\n1 - Criar")
         print("2 - Listar")
         print("3 - Atualizar")
         print("4 - Deletar")
         print("5 - Sair")
-        opcao = input("Escolha: ")
-        if opcao == "1":
+        opcao = int(input("Escolha: "))
+        if opcao == 1:
             criar()
-        elif opcao == "2":
+        elif opcao == 2:
             listar()
-        elif opcao == "3":
+        elif opcao == 3:
             atualizar()
-        elif opcao == "4":
+        elif opcao == 4:
             deletar()
-        elif opcao == "5":
+        elif opcao == 5:
             break
 ```
 
@@ -167,7 +168,7 @@ def menu():
 
 ---
 
-## 🧠 Questão para os alunos:
+# 🧠 Questão:
 
 ### 💡 **Desafio de Fixação**
 
